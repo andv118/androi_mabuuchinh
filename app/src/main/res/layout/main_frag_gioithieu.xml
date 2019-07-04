@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp">
+
+    <!-- section1-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nextPage">
+
+        <LinearLayout
+            android:id="@+id/section1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/textMenuNav"
+                android:text="@string/frag_gt_sec1_titile" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_gt_sec1_1" />
+
+            // vong so
+
+            <LinearLayout
+                android:id="@+id/vongso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    style="@style/textMenuNavCircle"
+                    android:text="1" />
+
+                <TextView
+                    style="@style/textMenuNavCircle"
+                    android:text="2" />
+
+                <TextView
+                    style="@style/textMenuNavCircle"
+                    android:text="3" />
+
+                <TextView
+                    style="@style/textMenuNavCircle"
+                    android:text="4" />
+
+                <TextView
+                    style="@style/textMenuNavCircle.noMargin"
+                    android:text="5" />
+            </LinearLayout>
+
+            // text chi tiet
+
+            <TextView
+                style="@style/textFragGioiThieu"
+                android:layout_width="60dp"
+                android:text="@string/frag_gt_sec1_2" />
+
+            <TextView
+                style="@style/textFragGioiThieu"
+                android:layout_width="110dp"
+                android:text="@string/frag_gt_sec1_3" />
+
+            <TextView
+                style="@style/textFragGioiThieu"
+                android:layout_width="240dp"
+                android:text="@string/frag_gt_sec1_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"
+                android:orientation="vertical"
+                android:scrollbars="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/frag_gt_sec1_5"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frag_gt_sec1_6"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    // section2
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nextPage">
+
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:id="@+id/section2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/textMenuNav"
+                android:text="@string/frag_gt_sec2_titile" />
+
+            <TextView
+                style="@style/textMenuNav.italic"
+                android:text="@string/frag_gt_sec2_titile_1" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_gt_sec2_1" />
+
+            <TextView
+                style="@style/textMenuNav.italic"
+                android:text="@string/frag_gt_sec2_titile_2" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_gt_sec2_2" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    // next page
+    <RelativeLayout
+        android:id="@+id/nextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txt_page_1"
+            android:layout_width="@dimen/txtNextPage"
+            android:layout_height="@dimen/txtNextPage"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/txt_page_2"
+            android:layout_width="@dimen/txtNextPage"
+            android:layout_height="@dimen/txtNextPage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_page_1"
+            android:background="@color/colorGreyBoder"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

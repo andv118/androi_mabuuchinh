@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0469C1">
+
+        <ImageView
+            android:id="@+id/img_logo_footer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_img_logo_main" />
+
+
+        <TextView
+            style="@style/textFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_footer_centre"
+            android:textAllCaps="true"
+            android:layout_toRightOf="@+id/img_logo_footer"
+            android:text="@string/txtFooter1" />
+
+        <TextView
+            android:id="@+id/txt_footer_centre"
+            style="@style/textFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_logo_footer"
+            android:text="@string/txtFooter2" />
+
+
+        <TextView
+            style="@style/textFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_footer_centre"
+            android:layout_toRightOf="@+id/img_logo_footer"
+            android:text="@string/txtFooter3" />
+
+    </RelativeLayout>
+</RelativeLayout>

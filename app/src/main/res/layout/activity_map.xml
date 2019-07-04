@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.htn.dovanan.mabuuchinh.activity.MapActivity">
+
+    <FrameLayout
+        android:id="@+id/dummy_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/relative_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="#26000000"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_back_blue" />
+
+        <ImageView
+            android:id="@+id/img_direct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_img_logo_main"
+            android:padding="3dp"
+            android:src="@drawable/ic_directions_car" />
+
+        <EditText
+            android:id="@+id/edt_direct1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_direct"
+            android:layout_toRightOf="@+id/img_back"
+            android:background="@drawable/bg_edt_seach"
+            android:hint="Chọn điểm đi"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edt_direct2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_direct1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_direct"
+            android:layout_toRightOf="@+id/img_back"
+            android:background="@drawable/bg_edt_seach"
+            android:hint="Chọn điểm đến"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <com.htn.dovanan.mabuuchinh.util.MaxHeightRecyclerView
+        android:id="@+id/recyclerview_search_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_search"
+        android:background="#40000000"
+        app:maxHeight="120dp"
+        android:paddingBottom="2dp"
+        android:visibility="gone" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#B31AA9D6"
+        app:itemIconTint="@color/colorWhite"
+        app:itemTextColor="@color/colorWhite"
+        app:menu="@menu/bottom_menu" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_connect_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="70dp"
+        android:background="#B3FFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_direct_infowindown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_directions_map_blue" />
+
+        <ImageView
+            android:id="@+id/img_map_infowindown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/google_maps" />
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/show_hide_marker"-->
+    <!--android:layout_above="@+id/bottom_navigation"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:background="#B3FFFFFF"-->
+    <!--android:padding="2dp"-->
+    <!--android:src="@drawable/ic_marker"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/bg_grd_header">
+
+    // header
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        // img frag
+
+        <ImageView
+            android:id="@+id/img_language_eng"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_language_eng" />
+
+        <ImageView
+            android:id="@+id/img_language_vni"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/img_language_eng"
+            android:src="@drawable/img_language_vn" />
+
+        // header main
+
+        <ImageView
+            android:id="@+id/img_quochuy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_header2"
+            android:layout_toRightOf="@+id/img_quochuy"
+            android:padding="2dp"
+            android:text="@string/txtHeader1"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/img_quochuy"
+            android:layout_alignBottom="@+id/img_quochuy"
+            android:layout_toRightOf="@+id/img_quochuy"
+            android:padding="2dp"
+            android:text="@string/txtHeader2"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    // menu nav
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/txtTrangChu"
+            style="@style/textHeaderNav"
+            android:layout_weight="1"
+            android:text="@string/txtHeaderNavTrangChu"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/txtGioiThieu"
+            style="@style/textHeaderNav"
+            android:layout_weight="1"
+            android:text="@string/txtHeaderNavGioiThieu" />
+
+        <TextView
+            android:id="@+id/txtVanBan"
+            style="@style/textHeaderNav"
+            android:layout_weight="1"
+            android:text="@string/txtHeaderNavVanBan" />
+
+        <TextView
+            android:id="@+id/txtHuongDan"
+            style="@style/textHeaderNav"
+            android:layout_weight="1"
+            android:text="@string/txtHeaderNavHuongDan" />
+
+    </LinearLayout>
+
+</RelativeLayout>

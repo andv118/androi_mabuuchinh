@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/bg_item_search"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/txtMBC"
+        android:textColor="@color/colorTextBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10_14 Thanh pho ha noi"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+

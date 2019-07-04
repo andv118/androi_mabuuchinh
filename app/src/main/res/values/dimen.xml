@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="maxHeightRecyclerviewFilter">200dp</dimen>
+
+    <!--Main container-->
+    <dimen name="txtSizeMbc">20sp</dimen>
+
+    <!--Frag gioi thieu-->
+    <dimen name="txtNextPage">30sp</dimen>
+
+</resources>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite" >
+
+    <!--section1-->
+    <ScrollView
+        android:id="@+id/section1"
+        android:visibility="visible"
+        android:layout_above="@+id/nextPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--title-->
+            <TextView
+                style="@style/textMenuNav"
+                android:text="@string/frag_hd_sec1_titile" />
+
+            <!--a. google play-->
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec1_titile_a" />
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:id="@+id/txt_link_googleplay"
+                android:textColor="@color/colorTextBlue"
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec1_a_1" />
+
+            <!--b. huong dan tra cuu-->
+            <TextView
+                style="@style/textMenuNav.bold"
+                android:text="@string/frag_hd_sec1_titile_b" />
+
+            <ImageView
+                android:id="@+id/img_sec_1"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec1_b_1" />
+
+            <ImageView
+                android:id="@+id/img_sec_1_1"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec1_b_2" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec1_b_3" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--section2-->
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/section2"
+        android:layout_above="@+id/nextPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                style="@style/textMenuNav"
+                android:text="@string/frag_hd_sec2_titile" />
+
+            <ImageView
+                android:id="@+id/img_sec_2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec2_a_1" />
+
+            <ImageView
+                android:id="@+id/img_sec_2_2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec2_a_2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--section3-->
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/section3"
+        android:layout_above="@+id/nextPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                style="@style/textMenuNav"
+                android:text="@string/frag_hd_sec3_titile" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginRight="40dp"
+                    android:layout_centerVertical="true"
+                    style="@style/textMenuNav.cap1"
+                    android:text="@string/frag_hd_sec3_a_1" />
+
+                <ImageView
+
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/google_maps"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            // tim kiem
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec3_b" />
+
+            <ImageView
+                android:id="@+id/img_sec_3_1"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec3_b_1" />
+
+            <ImageView
+                android:id="@+id/img_sec_3_2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp" />
+
+            // chi duong
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec3_b" />
+
+            <TextView
+                style="@style/textMenuNav.cap1"
+                android:text="@string/frag_hd_sec3_c_1" />
+
+            <ImageView
+                android:id="@+id/img_sec_3_3"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    style="@style/textMenuNav.cap1"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/frag_hd_sec3_c_2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_directions_car" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    // next page
+    <RelativeLayout
+        android:id="@+id/nextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txt_page_1"
+            android:layout_width="@dimen/txtNextPage"
+            android:layout_height="@dimen/txtNextPage"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/txt_page_2"
+            android:layout_width="@dimen/txtNextPage"
+            android:layout_height="@dimen/txtNextPage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_page_1"
+            android:background="@color/colorGreyBoder"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/txt_page_3"
+            android:layout_width="@dimen/txtNextPage"
+            android:layout_height="@dimen/txtNextPage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txt_page_2"
+            android:background="@color/colorGreyBoder"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

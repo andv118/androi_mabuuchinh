@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:background="#f1f1f1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        // row title
+        <TableRow>
+
+            <TextView
+                style="@style/textFragVanBanTitle"
+                android:layout_weight="1"
+                android:text="STT" />
+
+            <TextView
+                android:layout_weight="5"
+                android:text="Văn bản"
+                style="@style/textFragVanBanTitle" />
+
+            <TextView
+                android:layout_weight="2"
+                android:text="Ngày"
+                style="@style/textFragVanBanTitle" />
+
+            <TextView
+                android:layout_weight="2"
+                android:text="Ghi chú"
+                style="@style/textFragVanBanTitle" />
+
+        </TableRow>
+
+        // row 1
+        <TableRow>
+            <TextView
+            style="@style/textFragVanBan.STT"
+            android:layout_weight="1"
+            android:text="1" />
+
+            <TextView
+            style="@style/textFragVanBan"
+            android:layout_weight="5"
+            android:text="@string/frag_vb_1" />
+
+            <TextView
+            style="@style/textFragVanBan"
+            android:layout_weight="2"
+            android:text="@string/frag_vb_ngay_1" />
+
+            <TextView
+            style="@style/textFragVanBan"
+            android:layout_weight="2" />
+
+        </TableRow>
+
+        // row 2
+        <TableRow>
+            <TextView
+                style="@style/textFragVanBan.STT"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <TextView
+                style="@style/textFragVanBan.Vb"
+                android:layout_weight="5"
+                android:text="@string/frag_vb_2" />
+
+            <TextView
+                style="@style/textFragVanBan"
+                android:layout_weight="2"
+                android:text="@string/frag_vb_ngay_2" />
+
+            <TextView
+                style="@style/textFragVanBan"
+                android:layout_weight="2" />
+
+        </TableRow>
+
+        // row 3
+        <TableRow>
+
+            <TextView
+                style="@style/textFragVanBan.STT"
+                android:layout_weight="1"
+                android:text="3" />
+
+            <TextView
+                style="@style/textFragVanBan.Vb"
+                android:layout_weight="5"
+                android:text="@string/frag_vb_3" />
+
+            <TextView
+                style="@style/textFragVanBan"
+                android:layout_weight="2"
+                android:text="@string/frag_vb_ngay_3" />
+
+            <TextView
+                style="@style/textFragVanBan"
+                android:layout_weight="2" />
+
+        </TableRow>
+
+        // row 4
+        <TableRow>
+
+            <TextView
+                style="@style/textFragVanBan.STT"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <TextView
+                style="@style/textFragVanBan.Vb"
+                android:layout_weight="5"
+                android:text="@string/frag_vb_4" />
+
+            <TextView
+                style="@style/textFragVanBan"
+                android:layout_weight="2"
+                android:text="@string/frag_vb_ngay_4" />
+
+            <TextView
+                style="@style/textFragVanBan"
+                android:layout_weight="2" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

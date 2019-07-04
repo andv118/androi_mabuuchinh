@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">MaBuuChinh</string>
+
+    <string name="maps_api_key" translatable="false">
+        AIzaSyCu8bDzTEuetBXaueWpNhKu8s-41dOIvcE
+    </string>
+
+    <string name="maps_api_key_ban_quyen" translatable="false">
+        AIzaSyAoDvmEF49FQVfuh1O1ZyNUubq_C4ZSIjI
+    </string>
+
+    <!--Main Activity-->
+    <string name="Main_Activity_Exit_app">Nhấn BACK lần nữa để thoát!</string>
+
+    <!-- Map Activity -->
+    <string name="Map_Activity_Toast_Address">Điền đầy đủ địa chỉ!</string>
+    <string name="Map_Activity_hint_tim_kiem">Tìm địa chỉ mã bưu chính</string>
+    <string name="Map_Activity_hint_chi_duong_1">Chọn điểm xuất phát</string>
+    <string name="Map_Activity_hint_chi_duong_2">Chọn điểm đến</string>
+
+    <string name="curent_location">Vị trí hiện tại!</string>
+
+    <!--Dialog-->
+    <string name="btn_all_mbc">Tải về toàn bộ</string>
+    <string name="btn_tinh_mbc">Tải về theo tỉnh</string>
+    <!--Main container-->
+    <string name="txt_mbc">MÃ BƯU CHÍNH QUỐC GIA VIỆT NAM</string>
+    <string name="txt_download">Tải về bộ mã tại đây</string>
+    <string name="txt_hint">Tìm kiếm mã bưu chính tại đây!</string>
+
+    <!--Header-->
+    <string name="txtHeader1">ứng dụng thông tin điện tử</string>
+    <string name="txtHeader2">tra cứu mã bưu chính quốc gia</string>
+    <string name="txtHeaderNavTrangChu">Trang chủ</string>
+    <string name="txtHeaderNavGioiThieu">Giới thiệu</string>
+    <string name="txtHeaderNavVanBan">Văn bản</string>
+    <string name="txtHeaderNavHuongDan">Hướng dẫn</string>
+
+    <!--Footer-->
+    <string name="txtFooter1">CƠ QUAN CHỦ QUẢN: BỘ THÔNG TIN VÀ TRUYỀN THÔNG (MIC)</string>
+    <string name="txtFooter2">Liên hệ: Vụ Bưu chính, 18 Nguyễn Du, Hà Nội</string>
+    <string name="txtFooter3">ĐT: 024.38226625, Email: vanthubuuchinh@mic.gov.vn</string>
+
+    <!--Header navigation-->
+    <string name="txtHeaderNav1">Bộ Thông Tin Và Truyền Thông (MIC)</string>
+    <string name="txtHeaderNav2">vanthubuuchinh@mic.gov.vn</string>
+
+    <!--Menu-->
+    <string name="menuTrangChu">Trang chủ</string>
+    <string name="menuGioiThieu">giới thiệu</string>
+    <string name="menuVanBan">Văn bản</string>
+    <string name="menuHuongDan">Hướng dẫn</string>
+
+    <!--Search layout-->
+    <string name="txtSearchTitle">Tìm kiếm mã bưu chính Việt Nam</string>
+    <string name="txtSearchEdtHint">Tìm kiếm</string>
+    <string name="btnSearchHuy">hủy</string>
+
+    <!--Toobal-->
+    <string name="toolbarTitle">Danh sách mã bưu chính</string>
+    <string name="toolbarTitleTinh">Mã bưu chính tỉnh, thành phố</string>
+    <string name="toolbarTitleHuyen">Mã bưu chính huyện, đơn vị tp</string>
+    <string name="toolbarTitleCtHuyen">Mã bưu chính đơn vị huyện</string>
+
+    <!--FRAGMENT GIỚI THIỆU-->
+    // section 1
+    <string name="frag_gt_sec1_titile">1. Cấu  trúc mã bưu chính
+    </string>
+    <string name="frag_gt_sec1_1">Mã bưu chính quốc gia gồm tập hợp 05 (năm) ký tự số, cụ thể
+    </string>
+    <string name="frag_gt_sec1_2"><u>Xác định mã vùng</u>
+    </string>
+    <string name="frag_gt_sec1_3"><u>Xác định Mã tỉnh, thành phố trực thuộc trung ương</u>
+    </string>
+    <string name="frag_gt_sec1_4"><u>Xác định mã quận, huyện và đơn vị hành chính tương đương</u>
+    </string>
+    <string name="frag_gt_sec1_5">Xác định đối tượng gán mã
+    </string>
+    <string name="frag_gt_sec1_6">Đối tượng gán mã gồm: Phường, xã, đơn vị hành chính tương đương: điểm phục vụ bưu chính thuộc mạng bưu chính công cộng: điểm phục vụ bưu chính và đối tượng phục vụ thuộc mạng bưu chính phục vụ cơ quan Đảng, Nhà nước theo Quyết định của Thủ tướng Chính phủ: Cơ qua đại diện ngoại giao, cơ quan lãnh sự của nước ngoài và cơ quan đại diện của các tổ chức quốc tế tại Việt nam
+    </string>
+
+    // section 2
+    <string name="frag_gt_sec2_titile">2. Lợi ích của việc sử dụng Mã bưu chính
+    </string>
+    <string name="frag_gt_sec2_titile_1">2.1 Đối với người sử dung dịch vụ mã bưu chính
+    </string>
+    <string name="frag_gt_sec2_titile_2">2.2 Đối với tổ chức, doanh nghiệp cung ứng dịch vụ bưu chính
+    </string>
+    <string name="frag_gt_sec2_1">- Bưu gửi được vận chuyển và phát được nhanh chóng, chính xác và an toàn. \n
+                                  - Giảm số lượng bưu gửi không phát được.\n
+                                  - Có cơ hội giảm giá thành dịch vụ.\n
+                                  - Chất lượng cung ứng dịch vụ được nâng cao.
+    </string>
+    <string name="frag_gt_sec2_2">- Tạo thuận lợi cho việc chia chọn, phân hướng các bưu gửi nhanh chóng, chính xác rút ngắn hơn thời gian chia chọn và phát bưu gửi. \n
+                                  - Xác định hướng chuyển bưu gửi nhanh chóng, chính xác khi việc ghi địa chỉ không rõ ràng, do đó sẽ hạn chế sai sót trong tác nghiệp.\n
+                                  - Chất lượng dịch vụ được nâng cao.\n
+                                  - Giảm giá thành dịch vụ đối với bưu gửi số lượng lớn trong cung ứng dịch vụ bưu chính.\n
+                                  - Công tác quản trị nội bộ, công tác kế toán và thống kê sản lượng được thuận tiện qua việc kết nối dữ liệu gắn với mã bưu chính.\n
+                                  - Thuận lợi cho việc ứng dụng các phần mềm hỗ trợ khai thác và quản lý giữa các bưu cục, điểm phục vụ cũng như các đơn vị kinh doanh từ đó đơn giản hóa quy trình khai thác, nghiệp vụ; xây dựng kế hoạch kinh doanh và quản lý hoạt động bán hàng có hiệu quả hơn.\n
+                                  - Tạo thêm nguồn thu thông qua hoạt động đáp ứng nhu cầu nghiên cứu thị trường của tổ chức, cá nhân.
+    </string>
+
+    <!--FRAGMENT VĂN BẢN-->
+    <string name="frag_vb_titile">VĂN BẢN QUY PHẠM PHÁP LUẬT LIÊN QUAN ĐẾN \n
+                                    MÃ BƯU CHÍNH QUỐC GIA</string>
+
+    <string name="frag_vb_1">Luật bưu chính</string>
+    <string name="frag_vb_2">Nghị định số 17/2017/NĐ-CPngày 17/02/2017 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Thông tin và Truyền thông</string>
+    <string name="frag_vb_3">Thông tư số 07/2017/TT-BTTTT ngày 23/6/2017 của Bộ trưởng Bộ Thông tin và Truyền thông quy định về Mã bưu chính quốc gia</string>
+    <string name="frag_vb_4">Quyết định số 2475/QĐ-BTTTT ngày 29/12/2017 của Bộ trưởng Bộ Thông tin và Truyền thông về việc ban hành Mã bưu chính quốc gia</string>
+
+    <string name="frag_vb_ngay_1">17/06/2010</string>
+    <string name="frag_vb_ngay_2">17/02/2017</string>
+    <string name="frag_vb_ngay_3">23/06/2017</string>
+    <string name="frag_vb_ngay_4">29/12/2017</string>
+
+    <!--FRAGMENT HƯỚNG DẪN-->
+    // section 1
+    <string name="frag_hd_sec1_titile"><b>1. Tra cứu trên ứng dụng điện tử</b></string>
+        // a. google play
+    <string name="frag_hd_sec1_titile_a"><b>a. Cài đặt ứng dụng trên GooglePlay</b>
+    </string>
+    <string name="frag_hd_sec1_a_1"><i>Ứng dụng tìm kiếm mã bưu chính</i>
+    </string>
+        // b. tra cuu
+    <string name="frag_hd_sec1_titile_b">b. Tra cứu đối tượng Mã bưu chính.
+    </string>
+
+    <string name="frag_hd_sec1_b_1">- Nhấn vào ô tìm kiếm để mở giao diện tìm kiếm.
+    </string>
+    <string name="frag_hd_sec1_b_2"><b>- Tra cứu theo tên đối tượng Mã bưu chính</b>\n
+                                  + Tại ô \"Tìm kiếm\"; nhập tên \"Đối tượng gán mã\"\n
+                                  <i>Ví dụ 1:</i>\n
+                                  + Tại ô \"Tìm kiếm\", nhập \"<b>Phường Liễu Giai</b>\", thì kết quả tra được Mã bưu chính của phường Liễu Giai, quận Ba Đình, thành phố Hà Nội là <b>11106</b>\n
+                                  + Tại ô \"Tìm kiếm\", nhập \"<b>Tổng lãnh sự quán Thụy Sỹ</b>\", thì kết quả tra được Mã bưu chính của Tổng lãnh sự quán Thụy Sỹ là <b>70222</b>.
+    </string>
+    <string name="frag_hd_sec1_b_3"><b>- Tra cứu theo mã đối tượng Mã bưu chính</b>\n
+                                  <i>Ví dụ 2:</i>\n
+                                  + Tại ô \"Tìm kiếm\", nhập \"<b>10046</b>\", thì kết quả tra được đối tượng gán mã là <b>Bộ thông tin và Truyền thông</b>.\n
+                                  + Tại ô \"Tìm kiếm\", nhập \"<b>90251</b>\", thì kết quả tra được đối tượng gán mã là <b>Bưu cục Mỹ Luông, huyện Chợ Mới, tỉnh An Giang</b>.
+    </string>
+
+    // section 2
+    <string name="frag_hd_sec2_titile">2. Hướng dẫn cách tải file bộ Mã bưu chính</string>
+    <string name="frag_hd_sec2_a_1">- Nhấn vào tải về bộ mã để tài file mã bưu chính về điện thoại.
+    </string>
+    <string name="frag_hd_sec2_a_2">- Lựa chọn tải về toàn bộ mã hoặc tải về theo tỉnh.
+    </string>
+
+    // section 3
+    <string name="frag_hd_sec3_titile">3. Hướng dẫn tìm kiếm địa chỉ đối tượng Mã bưu chính trên bản đồ.</string>
+    <string name="frag_hd_sec3_a_1">- Nhấn icon google map để mở kết nối với bản đồ.
+    </string>
+    <string name="frag_hd_sec3_b"><b>- Hướng dẫn tìm kiếm địa chỉ đối tượng Mã bưu chính</b>.
+    </string>
+    <string name="frag_hd_sec3_b_1">+ Nhấn vào ô \"Tìm kiếm\" để mở giao diện tìm kiếm.
+        \n+ Nhập tên hoặc mã của đối tượng Mã bưu chính cần tìm như hướng dẫn ở mục số 1.
+    </string>
+    <string name="frag_hd_sec3_c"><b>- Hướng chỉ đường giữa 2 đối tượng Mã bưu chính</b>.
+    </string>
+    <string name="frag_hd_sec3_c_1">+ Nhấn vào ô \"Chỉ đường\" để mở giao diện chỉ đường.
+        \n+ Nhập tên hoặc mã của đối tượng Mã bưu chính cần tìm như hướng dẫn ở mục số 1.
+        \n+Nhập điểm xuất phát và điểm đến.
+    </string>
+    <string name="frag_hd_sec3_c_2">+ Nhấn vào icon chỉ đường để hiện đường đi trên bản đồ.
+    </string>
+
+</resources>

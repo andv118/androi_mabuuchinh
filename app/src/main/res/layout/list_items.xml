@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/bg_item_search"
+    android:padding="5dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_toLeftOf="@+id/imgTimKiem"
+        android:id="@+id/txtMBC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:text="10_14 Thanh pho ha noi"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imgTimKiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/ic_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>
+

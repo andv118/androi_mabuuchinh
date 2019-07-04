@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/bg_item_search"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/img_icon_preview"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back_blue"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_ten_tinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:paddingLeft="5dp"
+            android:text="10-14 - Thành phố Hà Nội"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/img_icon_next"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:rotation="180"
+            android:src="@drawable/ic_back_blue" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_phone"
+            style="@style/iconTinhThanhPho"
+            android:src="@drawable/ic_phone" />
+
+        <TextView
+            android:id="@+id/txt_phone_tinh"
+            style="@style/textRowTinhThanhPho"
+            android:layout_toRightOf="@+id/img_phone"
+            android:text="(84.24) 38254403" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_location"
+            style="@style/iconTinhThanhPho"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/txt_location_tinh"
+            style="@style/textRowTinhThanhPho"
+            android:layout_toRightOf="@+id/img_location"
+            android:text="Thành phố Hà Nội" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_address"
+            style="@style/iconTinhThanhPho"
+            android:src="@drawable/ic_address" />
+
+        <TextView
+            android:id="@+id/txt_address_tinh"
+            android:layout_toLeftOf="@+id/maps"
+            style="@style/textRowTinhThanhPho"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/img_address"
+            android:text="75 Đinh Tiên Hoàng, Hoàn Kiếm, Thành phố Hà Nội" />
+
+        <ImageView
+            android:id="@+id/maps"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/google_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_message"
+            style="@style/iconTinhThanhPho"
+            android:src="@drawable/ic_message" />
+
+        <TextView
+            android:id="@+id/txt_message_tinh"
+            style="@style/textRowTinhThanhPho"
+            android:layout_toRightOf="@+id/img_message"
+            android:text="cskh.bdhn@vnpost.vn" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_link"
+            style="@style/iconTinhThanhPho"
+            android:src="@drawable/ic_link" />
+
+        <TextView
+            android:id="@+id/txt_link_tinh"
+            style="@style/textRowTinhThanhPho"
+            android:layout_toRightOf="@+id/img_link"
+            android:text="http://hanoi.gov.vn"
+            android:textColor="#4acff4" />
+
+    </RelativeLayout>
+
+</LinearLayout>
